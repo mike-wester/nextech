@@ -18,18 +18,18 @@ public class StoriesController : ControllerBase
         _storyService = storyService;
 
     }
-    /*
+    
     [HttpGet(Name = "GetStories")]
-    public async Task<object> GetAsync()
+    public async Task<object> GetStories()
     {
-        return _storyService.GetStories();
+        return await _storyService.GetStories();
     }
-    */
-
+    /*
     [HttpGet(Name = "{id}")]
     public async Task<object> GetStory(int Id)
     {
         return await _storyService.GetStory(Id);
     }
+    */
 }
 

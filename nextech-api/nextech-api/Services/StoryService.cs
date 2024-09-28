@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json;
 using nextech_api.Interfaces.Services;
@@ -20,11 +21,11 @@ namespace nextech_api.Services
 			_httpClient = httpClient;
             _memoryCache = memoryCache;
         }
-        /*
-		public async IEnumerable<Task<Story>> GetStories()
+        
+		public async Task<IEnumerable<Story>> GetStories()
 		{
             List<Story> stories = new List<Story>();
-            IEnumerable<Task<Story>> storyTasks = Enumerable.Empty<Task<Story>>();
+            IEnumerable<Task<Story>> storyTasks;
 
             using HttpResponseMessage response = await _httpClient.GetAsync(STORIES_API);
 
@@ -34,11 +35,12 @@ namespace nextech_api.Services
                 var storiesAPI = JsonConvert.DeserializeObject<List<int>>(storiesResponse);
 
                 storyTasks = storiesAPI?.Select(GetStory);
+                stories = (await Task.WhenAll(storyTasks)).ToList();
             }
 
-            return storyTasks;
+            return stories;
         }
-        */
+        
 
         public async Task<Story> GetStory(int storyId)
         {
