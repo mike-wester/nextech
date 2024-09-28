@@ -12,15 +12,11 @@ namespace nextech_api.Services
 			_httpClient = httpClient;
 		}
 
-		public async Task GetStories()
+		public async Task<String> GetStories()
 		{
 			using HttpResponseMessage response = await _httpClient.GetAsync("https://hacker-news.firebaseio.com/v0/newstories.json");
 
-			response.EnsureSuccessStatusCode();
-
-			var jsonResponse = await response.Content.ReadAsByteArrayAsync();
-            Console.WriteLine($"{jsonResponse}\n");
-
+            return await response.Content.ReadAsStringAsync();
         }
 	}
 }

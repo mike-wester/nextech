@@ -31,3 +31,4 @@
 /Users/michaelwester/dev/nextech/nextech-api/nextech-api/obj/Debug/net7.0/nextech-api.pdb
 /Users/michaelwester/dev/nextech/nextech-api/nextech-api/obj/Debug/net7.0/nextech-api.genruntimeconfig.cache
 /Users/michaelwester/dev/nextech/nextech-api/nextech-api/obj/Debug/net7.0/ref/nextech-api.dll
+/Users/michaelwester/dev/nextech/nextech-api/nextech-api/bin/Debug/net7.0/Newtonsoft.Json.dll

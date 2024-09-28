@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LjOQ8QKeF4xMVq459Qgi7q5S37QPFB+rHHnbChuw8JvhzXpjLjWINkrSFhqp7JvozCablWP5oazGBF9ow4uVSw==",
+  "dgSpecHash": "KfgfzfaU2GLja4ea2fX8YEAy4o+URrjL+c7XZKtobMNjeFgkLQZ3AvxQoS9Emxr1WHFCjtlyUYdnQ4kcuqLwfA==",
   "success": true,
   "projectFilePath": "/Users/michaelwester/dev/nextech/nextech-api/nextech-api/nextech-api.csproj",
   "expectedPackageFiles": [
     "/Users/michaelwester/.nuget/packages/microsoft.aspnetcore.openapi/7.0.10/microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "/Users/michaelwester/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/michaelwester/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/michaelwester/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/michaelwester/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/Users/michaelwester/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/Users/michaelwester/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

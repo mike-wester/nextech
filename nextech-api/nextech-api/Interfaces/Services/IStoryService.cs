@@ -3,7 +3,7 @@ namespace nextech_api.Interfaces.Services
 {
 	public interface IStoryService
     {
-        public Task GetStories();
+        public Task<String> GetStories();
     }
 }
 

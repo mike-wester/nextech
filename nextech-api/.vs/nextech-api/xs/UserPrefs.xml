@@ -1,20 +1,36 @@
 ﻿<Properties StartupConfiguration="{2EFAD12D-2A6F-45E9-9AC9-BC765E9CE8D6}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="nextech-api/Services/StoryService.cs">
+    <Files>
+      <File FileName="nextech-api/Controllers/WeatherForecastController.cs" />
+      <File FileName="nextech-api/Interfaces/Services/IStoryService.cs" />
+      <File FileName="nextech-api/Services/StoryService.cs" Line="29" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="nextech-api" expanded="True">
-            <Node name="nextech-api" selected="True" />
+            <Node name="nextech-api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="StoryService.cs" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.nextech-api PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/michaelwester/dev/nextech/nextech-api/nextech-api/Services/StoryService.cs" relfile="nextech-api/Services/StoryService.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.nextech-api PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc;
 using nextech_api.Interfaces.Services;
 using nextech_api.Services;
 
@@ -6,35 +7,19 @@ namespace nextech_api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class StoriesController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
-    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ILogger<StoriesController> _logger;
     private readonly IStoryService _storyService;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger, IStoryService storyService)
+    public StoriesController(ILogger<StoriesController> logger, IStoryService storyService)
     {
         _logger = logger;
         _storyService = storyService;
 
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
-    {
-        _ = _storyService.GetStories();
-
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
-    }
+    [HttpGet(Name = "GetStories")]
+    public async Task<object> GetAsync() => JsonConvert.DeserializeObject<List<int>>(await _storyService.GetStories());
 }
 
