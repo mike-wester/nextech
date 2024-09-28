@@ -6,7 +6,7 @@ using nextech_api.Services;
 namespace nextech_api.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class StoriesController : ControllerBase
 {
     private readonly ILogger<StoriesController> _logger;
@@ -26,7 +26,7 @@ public class StoriesController : ControllerBase
     }
     */
 
-    [HttpGet(Name = "GetStory/{id}")]
+    [HttpGet(Name = "{id}")]
     public async Task<object> GetStory(int Id)
     {
         return await _storyService.GetStory(Id);
