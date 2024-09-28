@@ -12,7 +12,6 @@ export class ItemsService {
 
   constructor() { }
 
-
   public getItems = (): Observable<Item[]> => this._itemSubject.asObservable();
 
 }
