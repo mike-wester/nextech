@@ -18,8 +18,18 @@ public class StoriesController : ControllerBase
         _storyService = storyService;
 
     }
-
+    /*
     [HttpGet(Name = "GetStories")]
-    public async Task<object> GetAsync() => JsonConvert.DeserializeObject<List<int>>(await _storyService.GetStories());
+    public async Task<object> GetAsync()
+    {
+        return _storyService.GetStories();
+    }
+    */
+
+    [HttpGet(Name = "GetStory/{id}")]
+    public async Task<object> GetStory(int Id)
+    {
+        return await _storyService.GetStory(Id);
+    }
 }
 
