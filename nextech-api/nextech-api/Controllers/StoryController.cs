@@ -7,12 +7,12 @@ namespace nextech_api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class StoriesController : Controller
+public class StoryController : Controller
 {
     private readonly ILogger<StoriesController> _logger;
     private readonly IStoryService _storyService;
 
-    public StoriesController(ILogger<StoriesController> logger, IStoryService storyService)
+    public StoryController(ILogger<StoriesController> logger, IStoryService storyService)
     {
         _logger = logger;
         _storyService = storyService;
@@ -20,8 +20,8 @@ public class StoriesController : Controller
     }
 
     [HttpGet]
-    public async Task<object> GetStories()
+    public async Task<object> GetStory(int Id)
     {
-        return await _storyService.GetStories();
+        return await _storyService.GetStory(Id);
     }
 }
