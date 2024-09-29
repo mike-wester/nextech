@@ -1,29 +1,34 @@
 ﻿<Properties StartupConfiguration="{2EFAD12D-2A6F-45E9-9AC9-BC765E9CE8D6}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.nextech-api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="nextech-api/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.test-nextech-api FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test-nextech-api/Controllers/StoriesController.test.cs">
     <Files>
       <File FileName="nextech-api/Interfaces/Services/IStoryService.cs" />
       <File FileName="nextech-api/Services/StoryService.cs" />
       <File FileName="nextech-api/Models/Story.cs" />
       <File FileName="nextech-api/Controllers/StoriesController.cs" />
-      <File FileName="nextech-api/Program.cs" Line="32" Column="1" />
+      <File FileName="nextech-api/Program.cs" />
       <File FileName="nextech-api/appsettings.Development.json" />
       <File FileName="nextech-api/appsettings.json" />
       <File FileName="nextech-api/Properties/launchSettings.json" />
       <File FileName="nextech-api/Controllers/StoryController.cs" />
+      <File FileName="test-nextech-api/Usings.cs" />
+      <File FileName="test-nextech-api/Controllers/StoriesController.test.cs" Line="9" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="nextech-api" expanded="True">
+          <Node name="nextech-api">
             <Node name="nextech-api" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Interfaces" expanded="True">
                 <Node name="Services" expanded="True" />
               </Node>
-              <Node name="Program.cs" selected="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="test-nextech-api">
+              <Node name="Controllers" expanded="True">
+                <Node name="StoriesController.test.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -37,4 +42,8 @@
       <Breakpoint file="/Users/michaelwester/dev/nextech/nextech-api/nextech-api/Controllers/StoryController.cs" relfile="nextech-api/Controllers/StoryController.cs" line="25" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.nextech-api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
